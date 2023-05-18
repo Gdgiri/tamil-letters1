@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>புதிய மாணவி</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+  <body>
+    
+    <div class="main">
+      <button class="two"><a href="../7th page/index.html" style="position: relative; left: 10px;  color: black;  border-radius: 20px;" >⏮Prev</a></button>
+      <button class="one"><a href="../1st page/index.html" style="position: relative; right: 10px;  color: black;  border-radius: 20px;" >🔄Restart</a></button>
+        <p class="sign" align="center" style="font-weight: bold;">புதிய மாணவி</p>
+        <form class="form1">
+          <img src="../image/9.jpeg" alt="" width="400px" height="500px" style="position: relative; left: 100px;">
+          <br>
+        
+        
+          <div id="text" style="position: relative; top: 20px; left: 150px; color: black; background-color: whitesmoke; width: 250px; height: 50px; " ></div>
+          <br>
+        
+  
+          
+          <br>
+          <div class="audio">
+              <audio id="audio" controls style="position: relative; left: 100px; top: 150px;">
+                  <source src="../audio/8page.mp3" type="audio/mpeg">
+              </audio>
+             </div>
+             <p class="page">8/8</p>
+            </div>
+        <script>
+          // Define the text and time cues
+          var cues = [
+              {time: 0, text: "அப்படியா? "},
+              {time:1, text:"வகுப்பில்"},
+              {time: 2, text: "சொல்ல மறந்துவிட்டேன்."},
+              {time: 4, text: "ஷாலினி"},
+              {time: 4.5, text: "நியூசிலாந்திலிருந்து"},
+              {time: 6, text: "வந்திருக்கிறாள்."},
+              {time: 7, text: "அவளுக்கு"},
+              {time: 8, text: "தமிழ்"},
+              {time: 8.5, text: "தெரியாது"},
+              {time: 9.5, text: "நீதான் அவளுடன்"},
+              {time: 11, text: "தமிழில்"},
+              {time: 11.5, text: "பேசிப்"},
+              {time: 12, text: "பழக வேண்டும்."},
+              {time: 13.5, text: "அப்படியா"},
+              {time: 14, text: "ஆசிரியர்!"},
+              {time: 15, text: "நான்"},
+              {time: 16, text: "அவளை"},
+              {time: 16.5, text: "தவறாக"},
+              {time: 17, text: "நினைத்துவிட்டேன்."},
+              {time: 18, text: "நான்"},
+              {time: 19, text: "இப்போதே"},
+              {time: 19.5, text: "போய்"},
+              {time: 20, text: "அவளை"},
+              {time: 20.5, text: "அழைத்து"},
+              {time: 21, text: "வருகிறேன்."},
+              {time: 22, text: "முடிவு பெற்றது..."},
+
+              
+          ];
+  
+          // Get the audio element
+          var audio = document.getElementById("audio");
+  
+          // Get the text element
+          var text = document.getElementById("text");
+  
+          // Update the text element when the audio time changes
+          audio.addEventListener("timeupdate", function() {
+              var currentTime = audio.currentTime;
+  
+              // Find the cue that matches the current time
+              for (var i = 0; i < cues.length; i++) {
+                  if (cues[i].time > currentTime) {
+                      break;
+                  }
+              }
+  
+              // Update the text element with the cue text
+              text.innerHTML = cues[i-1].text;
+          });
+      </script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

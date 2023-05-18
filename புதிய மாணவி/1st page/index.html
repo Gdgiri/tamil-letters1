@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>புதிய மாணவி</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+  <body>
+    
+    <div class="main">
+      <button class="one"><a href="../2nd page/index.html" style="position: relative; left: 10px;  color: black;  border-radius: 20px;" >Next⏭</a></button>
+        <p class="sign" align="center" style="font-weight: bold;">புதிய மாணவி</p>
+        <form class="form1">
+          <img src="../image/2.jpeg" alt="" width="400px" height="500px" style="position: relative; left: 100px;">
+          <br>
+        
+       
+          <div id="text" style="position: relative; top: 20px; left: 150px; color: black; background-color: whitesmoke; width: 250px; height: 50px; " ></div>
+          <br>
+        
+  
+          
+          <br>
+         
+          <div class="audio">
+              <audio id="audio" controls style="position: relative; left: 100px; top: 150px;">
+                  <source src="../audio/1page.mp3" type="audio/mpeg">
+              </audio>
+             </div>
+             <p class="page">1/8</p>
+       
+       
+           
+          
+        </div>
+        <script>
+          // Define the text and time cues
+          var cues = [
+              {time: 0, text: "தொடக்கப்பள்ளித் "},
+              {time:1, text:"தமிழ் பாடநூல்"},
+              {time: 2, text: "வரிசை"},
+              {time: 3, text: "புதிய மாணவி"},
+              
+          ];
+  
+          // Get the audio element
+          var audio = document.getElementById("audio");
+  
+          // Get the text element
+          var text = document.getElementById("text");
+  
+          // Update the text element when the audio time changes
+          audio.addEventListener("timeupdate", function() {
+              var currentTime = audio.currentTime;
+  
+              // Find the cue that matches the current time
+              for (var i = 0; i < cues.length; i++) {
+                  if (cues[i].time > currentTime) {
+                      break;
+                  }
+              }
+  
+              // Update the text element with the cue text
+              text.innerHTML = cues[i-1].text;
+          });
+      </script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

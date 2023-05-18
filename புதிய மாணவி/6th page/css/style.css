@@ -1,0 +1,68 @@
+body {
+    background-color: rgb(216, 129, 144);
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.main {
+    background-color: pink;
+    width: 600px;
+    height: 800px;
+    margin: 5em auto;
+    border-radius: 1.5em;
+    box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+}
+#audio{
+    width: 300px;
+    height: 40px;
+    text-align: center;
+    position: relative;
+    
+
+}
+
+.audio{
+    position: relative;
+    bottom: 150px;
+    left: 30px;
+}
+#text{
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.page{
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 230px;
+    background-color:lightblue;
+    color: black;
+    border-radius: 60%;
+    width: 50px;
+}
+
+
+
+.one{
+    background: linear-gradient(to left,white 24%,red 6%,red 30%,red 40%);
+    width: 100px;
+    border-radius: 20px;
+    position: relative;
+    left: 450px;
+    top: 620px;
+}
+
+
+.two{
+    background: linear-gradient(to right,white 38%,blue 2%,blue 30%,blue 30%);
+    width: 100px;
+    border-radius: 20px;
+    position: relative;
+    right: 60px;
+    top: 620px;
+
+}
+
+

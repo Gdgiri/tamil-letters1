@@ -1,0 +1,47 @@
+body {
+    background-color: rgb(216, 129, 144);
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.main {
+    background-color: pink;
+    width: 600px;
+    height: 800px;
+    margin: 5em auto;
+    border-radius: 1.5em;
+    box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+}
+
+
+.btn{ 
+    padding: 10px;
+    text-align: center;
+    border-radius: 20px;
+    position: relative;
+    left: 250px;
+    top: 50px;
+    background-color: rgb(206, 83, 83);
+    color: white;
+    border-color: rgb(206, 83, 83);
+
+}
+
+#a{
+    
+    background-color:#53A182;
+    
+    
+}
+
+.b{
+    color: white;
+}
+
+.b:hover{
+    color: black;
+    text-decoration: none;
+    
+}
+
+
+
