@@ -1,0 +1,146 @@
+
+.giri
+{
+    width: 50%;
+    height: 20px;
+    text-align: center;
+    padding-left: 25%;
+    padding-top: 25%;
+}
+
+.letter
+{
+    text-align: center;
+    padding-top: 10%;
+}
+
+h2{
+    width: 300px;
+    font-weight: bolder;
+    font-family: fantasy;
+    font-size:x-large;
+}
+
+tbody{
+    width:500px;
+    
+}
+
+.btn{
+    background: #f16a70;
+    color: white;
+    width: 120px;
+    height: 50px;
+    position: relative;
+    right: 20px;
+}
+
+.btnn{
+    background-color: rgb(234, 79, 105);
+    color: white;
+    width: 80px;
+    height: 100px;
+   
+}
+
+
+
+
+.container {
+    position: relative;
+    width: 80px;
+  }
+  
+  .image {
+    display: block; 
+    height: 70px;
+    width: 160px;
+     
+    
+  }
+  
+  .overlay {
+    position: absolute;
+    left: 40px;
+    bottom: 1px;
+    right: 0;
+    height: 23px;
+    width: 33px;
+    opacity: 0;
+    transition: .2s ease;
+   
+  }
+  
+  .container:hover .overlay {
+    opacity: 1;
+  }
+  
+  .text {
+    color: #008CBA;
+    font-size: 20px;
+    position: absolute;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }  
+td{
+    width: 50px;
+}
+
+
+.btcc{
+    width: 300px;
+}
+
+.btnn{
+    background-color: rgb(234, 79, 105);
+    color: white;
+    width: 100px;
+    height: 80px;
+    position: relative;
+    right: 250px;
+    text-align: center;
+    
+}
+
+.h{
+    position: relative;
+    
+}
+
+#h{
+    position: relative;
+    top: 30px;
+}
+
+.nav{
+    width: 20px;
+}
+
+.tab{
+    padding-left: 5em;
+    background-color: white;
+    color: black;
+    width: 500px;
+
+}
+
+
+
+#a{
+    
+    background-color: #53A182;
+    
+    
+}
+
+.b{
+    color: white;
+}
+
+.b:hover{
+    color: black;
+    text-decoration: none;
+    
+}
